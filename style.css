@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+  /* border: 1px red solid; */
+}
+
+:root {
+  --blanco: #fff;
+  --rosa: #ff3281;
+  --amario: #ffe8a4;
+  --negro: #000;
+  --grislogo: #fdf9f0;
+}
+
+.linearosa {
+  background-color: var(--rosa);
+}
+
+.fondoamarillo {
+  background-color: var(--grislogo);
+  padding-bottom: 15px;
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Iconos {
+  font-size: 50px;
+}
+
+.sandwichMenu {
+  display: none;
+  padding: 10px;
+  font-size: 20px;
+  background-color: var(--rosa);
+  color: var(--blanco);
+}
+
+nav {
+  border: 3px black solid;
+  font-weight: 900;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--negro);
+  padding: 10px 30px;
+}
+
+.promos {
+  background-image: url("imagenes/slide2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  color: var(--blanco);
+}
+
+.anuncio {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 80px;
+}
+
+.anuncio h2 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.anuncio p {
+  font-weight: 500;
+}
+
+.btns1 {
+  display: flex;
+  gap: 50px;
+}
+
+.btnRosa {
+  text-decoration: none;
+  background-color: var(--rosa);
+  color: var(--blanco);
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.btnTransparente {
+  text-decoration: none;
+  border: 3px var(--rosa) solid;
+  color: var(--blanco);
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+}
+
+.ProdIzq {
+  height: 100%;
+  width: 50%;
+  line-height: 40px;
+}
+
+.banner {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  border: 10px green solid;
+
+}
+
+.filtro {
+  background-color: rgba(231, 231, 231, 0.8);
+  color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  opacity: 0;
+  left: 0;
+  transition: all 0.7s;
+}
+
+.banner:hover .filtro {
+  opacity: 1;
+}
+
+/*TALENTOS*/
+.talent {
+  background-color: #fff9f1;
+  margin: auto;
+}
+
+.talentos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.velas figure img {
+  max-width: 100%; /* La imagen se ajustará automáticamente al ancho del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la relación de aspecto */
+  border-radius: 10px;
+  transition: all 0.7s;
+}
+
+.velas figure img:hover {
+  filter: sepia(0.7);
+  transition: 0.3s;
+}
+
+.puestosTrabajo {
+  width: 55%;
+}
+
+/*Contenedores amarillos*/
+.contendoresAmarillos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.CuadroA1 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.CuadroA1 {
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+  /* border: 1px blue solid; */
+  width: 350px;
+  background-color: var(--amario);
+  padding: 15px 10px;
+  border-radius: 15px;
+  padding-bottom: 30px;
+}
+
+.CuadroA1:nth-child(3) {
+  margin-right: 0px;
+}
+
+.IMGCircular {
+  width: 200px;
+  border-radius: 100px;
+  border: 10px white solid;
+}
+
+.BTNMas {
+  margin-top: 80px;
+  text-decoration: none;
+  color: white;
+  background-color: #ff3281;
+  padding: 15px;
+}
+
+/*Instalaciones*/
+.centro {
+  text-align: center;
+}
+
+.instalaciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+}
+
+.instalacionesIzq {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 0;
+  line-height: 0px;
+}
+
+
+.banner2 {
+  width: 377px;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner2 img {
+  width: 380px;
+  height: 260px;
+  display: block;
+}
+
+.filtro2 {
+  background-color: #ff32816a;
+  color: var(--amario);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  opacity: 0;
+  left: -400px;
+
+  transition: all 0.7s;
+}
+
+.btnFiltro {
+  padding: 15px 15px;
+  background-color: var(--rojo);
+  color: var(--amario);
+  text-decoration: none;
+  font-size: 40px;
+  border-radius: 50%;
+}
+
+.banner2:hover .filtro2 {
+  opacity: 1;
+  left: 0;
+}
+
+.instalacionesDer {
+  width: 50%;
+}
+
+.banner3 {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner3 img {
+  width: 780px;
+  height: 530px;
+  display: block;
+}
+
+.filtro3 {
+  background-color: #ff32816a;
+  color: var(--amario);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  opacity: 0;
+  left: -400px;
+
+  transition: all 0.7s;
+}
+
+.banner3:hover .filtro3 {
+  opacity: 1;
+  left: 0;
+}
+
+/*Footer*/
+footer {
+  text-align: center;
+  position: relative;
+}
+
+.web {
+  color: var(--rosa);
+  text-decoration: none;
+}
+
+.flechaArriba {
+  display: inline;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: 2px var(--rosa) solid;
+  background-color: var(--blanco);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+}
+
+.centro{
+  text-align: center;
+}

@@ -1,0 +1,76 @@
+@media screen and (max-width:768px) {
+  .ancho {
+    max-width: 90%;
+  }
+
+  .promos {
+    background-image: url("imagenes/slide3.jpg");
+  }
+
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ProdIzq {
+    order: 2;
+    height: 100%;
+    width: 90%;
+    line-height: 30px;
+    margin-top: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+
+  .talentos {
+    flex-direction: column;
+  }
+
+  .puestosTrabajo {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .contendoresAmarillos {
+    flex-direction: column;
+  }
+
+  .CuadroA1 {
+    width: 90%;
+  }
+
+  .instalaciones {
+    flex-direction: column;
+  }
+
+  .instalacionesIzq {
+    width: 90%;
+    order: 2;
+    /* border: 1px blue dashed; */
+  }
+
+  .banner2 {
+    width: 100%;
+    margin: 0;
+    position: static;
+  }
+  .banner2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .instalacionesDer {
+    width: 90%;
+  }
+  .banner3 {
+    width: 100%;
+    margin: 0;
+    position: static;
+  }
+  .banner3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+}

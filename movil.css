@@ -1,0 +1,66 @@
+@media screen and (max-width:480px) {
+  nav {
+    display: none;
+  }
+
+  .cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30;
+  }
+
+  .sandwichMenu {
+    display: flex;
+    margin-right: 10px;
+
+  }
+
+  .Iconos {
+    margin-left: 40px;
+    flex-wrap: nowrap;
+
+  }
+
+  .promos {
+    background-image: url("imagenes/slide2.jpg");
+  }
+
+  .talent{
+    text-align: center;
+  }
+  .talentos {
+    width: 90%;
+    margin: auto;
+  }
+  .instalacionesIzq {
+    flex-direction: column;
+    width: 90%;
+    order: 2;
+    /* border: 1px blue dashed; */
+  }
+
+  .banner2 {
+    width: 100%;
+  }
+  .banner2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .instalacionesDer {
+    width: 90%;
+  }
+  .banner3 {
+    width: 100%;
+    margin: 0;
+    position: static;
+  }
+  .banner3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
